@@ -1,4 +1,4 @@
-import json
+
 import os
 import tkinter as tk
 from tkinter import ttk
@@ -121,13 +121,13 @@ root.title("Ma Todo App")
 
 
 
-# ----Image de fond-----
+# ----BACKGROUND IMG-----
 image = Image.open("background-3.jpeg")
 bg_image = ImageTk.PhotoImage(image, master=root)
 img_width, img_height = image.size
 print(image.size)
 
-root.geometry(f"{img_width}x{img_height}")      # taille (largeur x hauteur)
+root.geometry(f"{img_width}x{img_height}")      
 #root.resizable(True,False)
 
 canvas = tk.Canvas(root, width=img_width, height=img_height)
@@ -152,7 +152,7 @@ entry = tk.Entry(root, width=30)
 
 
 
-#----Bouton add task----
+#----BUTTON add task----
 add_text_id = canvas.create_text(
     img_width // 4, 230,
     text="+ ADD TASK",
